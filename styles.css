@@ -1,0 +1,29 @@
+.grid-container{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    
+}
+.grid-container * {
+    height: 100%;
+}
+
+/* .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.column{
+    flex-basis: 20px;
+} */
+
+.black-bkgd {
+    background-color: black;
+}
+
+@media screen and (min-width: 800px) {
+    .column {
+      flex: 1;
+    }
+  }
