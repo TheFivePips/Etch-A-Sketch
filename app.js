@@ -27,6 +27,13 @@ resizeBtn.addEventListener('click', function(){
     reset(divs) 
 
     let numBoxes = prompt("How big would you like your grid? We can go up to 100X100!. Just type one number")
+    if(isNaN(numBoxes)){
+        alert("please enter a valid number")
+        numBoxes = prompt("How big would you like your grid? We can go up to 100X100!. Just type one number")
+    }else if(numBoxes>100){
+        alert('Please enter a number below 100')
+        numBoxes = prompt("How big would you like your grid? We can go up to 100X100!. Just type one number")
+    }
     makeGrid(numBoxes)
     
 })
